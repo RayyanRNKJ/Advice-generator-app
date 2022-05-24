@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  margin-top: auto;
+}
+
+.advice-generator__container {
+  width: 100%;
+  max-width: 30em;
+  height: fit-content;
+  padding: 2em 1em;
+  position: relative;
+}
+
+.advice-generator__sub-container {
+  width: 100%;
+  height: 100%;
+  background: hsl(217, 19%, 24%);
+  border-radius: 1em;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 2.5em;
+}
+
+.advice-generator__advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.advice-generator__advice-text {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.advice-generator__advice-text::before{
+  content: open-quote;
+}
+
+.advice-generator__advice-text::after{
+  content: close-quote;
+}
+
+.advice-generator__divider {
+  width: 100%;
+  margin: 0.5em 0 0;
+}
+
+.advice-generator__shuffle-btn {
+  display: inline-flex;
+  background: hsl(150, 100%, 66%);
+  padding: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.advice-generator__shuffle-btn:hover {
+  box-shadow: 0 0 28px 0 hsl(150, 100%, 66%);
+}
+
+.advice-generator__shuffle-btn.disable {
+  background: hsl(217, 19%, 38%);
+  box-shadow: 0 0 28px 0 hsl(217, 19%, 24%);
+  cursor: not-allowed;
+}
+
+.advice-generator__shuffle-btn-icon {
+  width: 1.5em;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 1em;
+  color: hsl(217, 19%, 38%);
+}
+
+.attribution a{
+  color: hsl(150, 100%, 66%);
+}
+
+@media only screen and (max-width: 480px) {
+  .advice-generator__container {
+    padding: 2em 0;
+  }
+}
+
+/* 
+- Light Cyan: hsl(193, 38%, 86%);
+- Neon Green: hsl(150, 100%, 66%);
+- Grayish Blue: hsl(217, 19%, 38%);
+- Dark Grayish Blue: hsl(217, 19%, 24%);
+- Dark Blue: hsl(218, 23%, 16%); */

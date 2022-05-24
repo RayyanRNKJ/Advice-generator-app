@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- stylesheet -->
+
+</head>
+
+<body class="flex-container">
+  <main class="main flex-container">
+    <div class="advice-generator__container">
+      <div class="advice-generator__sub-container flex-container">
+        <p class="advice-generator__advice-id">Advice #117</p>
+        <h1 class="advice-generator__advice-text">It is easy to sit up and take notice, what's difficult is getting up
+          and taking action.</h1>
+        <img src="assets/images/pattern-divider-desktop.svg" alt="divider-vector" class="advice-generator__divider">
+        <abbr class="advice-generator__shuffle-btn-abbreviation">
+          <button class="advice-generator__shuffle-btn" onclick="getAdvice(); btnDisability()">
+            <img src="assets/images/icon-dice.svg" alt="dice-icon" class="advice-generator__shuffle-btn-icon"></button>
+        </abbr>
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://linktr.ee/rayyanrnkj" target="_blank">Rayyan Rasheed</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
