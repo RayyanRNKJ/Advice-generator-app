@@ -19,7 +19,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Advice generator app](https://www.frontendmentor.io/solutions/advice-generator-app-solution-made-with-html-css-js-api-RpXv5glqYf)
+- Live Site URL: [Advice generator app](https://rayyanrnkj.github.io/Advice-generator-app/)
+- Solution URL: [Advice generator app solution](https://www.frontendmentor.io/solutions/advice-generator-app-solution-made-with-html-css-js-api-RpXv5glqYf)
 
 ## My process
 
