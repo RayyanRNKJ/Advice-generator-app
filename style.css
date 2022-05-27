@@ -4,17 +4,16 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background-color: hsl(218, 23%, 16%);
+  min-height: 100vh;
   font-family: "Manrope", sans-serif;
-  overflow-x: hidden;
-  flex-direction: column;
   padding: 0 1em;
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
 }
 
 .flex-container {
@@ -23,7 +22,7 @@ body {
   align-items: center;
 }
 
-.main{
+.main {
   margin-top: auto;
 }
 
@@ -58,11 +57,11 @@ body {
   text-align: center;
 }
 
-.advice-generator__advice-text::before{
+.advice-generator__advice-text::before {
   content: open-quote;
 }
 
-.advice-generator__advice-text::after{
+.advice-generator__advice-text::after {
   content: close-quote;
 }
 
@@ -102,13 +101,13 @@ body {
 }
 
 .attribution {
-  text-align: center;
   margin-top: auto;
   margin-bottom: 1em;
   color: hsl(217, 19%, 38%);
+  gap: 0.2em;
 }
 
-.attribution a{
+.attribution a {
   color: hsl(150, 100%, 66%);
 }
 
@@ -116,11 +115,10 @@ body {
   .advice-generator__container {
     padding: 2em 0;
   }
-}
 
-/* 
-- Light Cyan: hsl(193, 38%, 86%);
-- Neon Green: hsl(150, 100%, 66%);
-- Grayish Blue: hsl(217, 19%, 38%);
-- Dark Grayish Blue: hsl(217, 19%, 24%);
-- Dark Blue: hsl(218, 23%, 16%); */
+  .attribution {
+    font-size: 0.85rem;
+    flex-direction: column;
+    gap: 0.35em;
+  }
+}
